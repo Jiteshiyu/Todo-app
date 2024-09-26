@@ -48,8 +48,8 @@ Ensure that Node.js and npm are installed on your machine. If not, you can downl
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/todo-app.git
-   cd todo-app
+   git clone https://github.com/Jiteshiyu/Todo-app.git
+   cd Todo-app
    ```
 
 2. Install the dependencies:
