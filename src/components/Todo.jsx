@@ -4,59 +4,51 @@ import TodoList from "./TodoList.jsx";
 import TodoForm from "./TodoForm.jsx";
 
 export default function Todo() {
+  // Initial state for todos
   const [todos, setTodos] = useState([
     { task: "eat", id: uuidv4(), isDone: false },
     { task: "sleep", id: uuidv4(), isDone: false },
   ]);
 
+  // Function to add a new todo
   const addNewTodo = (todo) => {
-    setTodos((prevTodos) => {
-      return [...prevTodos, { task: todo, id: uuidv4(), isDone: false }];
-    });
+    setTodos((prevTodos) => [
+      ...prevTodos,
+      { task: todo, id: uuidv4(), isDone: false },
+    ]);
   };
 
+  // Function to delete a todo
   const deleteTodo = (id) => {
-    setTodos((prevTodos) => {
-      return prevTodos.filter((todo) => todo.id != id);
-    });
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
   };
 
+  // Function to mark a todo as complete
   const completeTodo = (id) => {
-    setTodos((prevTodos) => {
-      return prevTodos.map((todo) => {
-        if (todo.id === id) {
-          return {
-            ...todo,
-            isDone: true,
-          };
-        } else {
-          return todo;
-        }
-      });
-    });
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
+        todo.id === id ? { ...todo, isDone: true } : todo
+      )
+    );
   };
 
+  // Function to mark all todos as complete
   const completeAllTodo = () => {
-    setTodos((prevTodos) => {
-      return prevTodos.map((todo) => {
-        return {
-          ...todo,
-          isDone: true,
-        };
-      });
-    });
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) => ({ ...todo, isDone: true }))
+    );
   };
 
   return (
     <div>
-      <TodoForm addNewTodo={addNewTodo} />
+      <TodoForm addNewTodo={addNewTodo} /> {/* Form to add new todos */}
       <TodoList
         todos={todos}
         deleteTodo={deleteTodo}
         completeTodo={completeTodo}
       />
       <button className="cmplt-btn btn" onClick={completeAllTodo}>
-        Complete All
+        Complete All {/* Button to complete all todos */}
       </button>
     </div>
   );
