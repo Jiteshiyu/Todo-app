@@ -49,7 +49,7 @@ Ensure that Node.js and npm are installed on your machine. If not, you can downl
 
    ```bash
    git clone https://github.com/Jiteshiyu/Todojo.git
-   cd Todo-app
+   cd Todojo
    ```
 
 2. Install the dependencies:
