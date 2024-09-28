@@ -46,7 +46,7 @@ export default function Todo() {
         todos={todos}
         deleteTodo={deleteTodo}
         completeTodo={completeTodo}
-      />
+      /> {/* Render todos list */}
       <button className="cmplt-btn btn" onClick={completeAllTodo}>
         Complete All {/* Button to complete all todos */}
       </button>
