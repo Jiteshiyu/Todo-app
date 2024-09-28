@@ -1,4 +1,4 @@
-# Todo App with React
+# Todojo
 
 This is a Todo App built with React.js where users can add, delete, and mark tasks as complete. It also supports a "Complete All" feature. This app demonstrates component-based architecture and state management using React's `useState` hook.
 
@@ -48,7 +48,7 @@ Ensure that Node.js and npm are installed on your machine. If not, you can downl
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Jiteshiyu/Todo-app.git
+   git clone https://github.com/Jiteshiyu/Todojo.git
    cd Todo-app
    ```
 
