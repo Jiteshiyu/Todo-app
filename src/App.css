@@ -1,70 +1,81 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1280px; 
+  margin: 0 auto; 
   text-align: center;
 }
 
+/* Main app container */
 .app {
-  min-width: 450px;
-  padding: 1.2rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 450px; 
+  padding: 1.2rem; 
+  background-color: #fff; 
+  border-radius: 0.5rem; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
+/* App heading style */
 .app-heading {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-top: 0;
+  font-size: 2.2rem; 
+  font-weight: bold; 
+  margin-top: 0; 
 }
 
+/* Search box style */
 .searchbox {
-  height: 1.5rem;
-  width: 10rem;
-  margin-right: 1rem;
-  border: 2px solid #333;
-  outline: none;
+  height: 1.5rem; 
+  width: 10rem; 
+  margin-right: 1rem; 
+  border: 2px solid #333; 
+  outline: none; 
 }
 
+/* Todo item style */
 .todo {
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-right: 0.7rem;
+  font-size: 1.1rem; 
+  font-style: italic; 
+  margin-right: 0.7rem; 
 }
 
+/* Base button style */
 .btn {
-  color: #fff;
-  margin: 0.3rem;
-  padding: 0.3rem 1.2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  transition: all 0.05s linear;
+  color: #fff; 
+  margin: 0.3rem; 
+  padding: 0.3rem 1.2rem; 
+  font-size: 1rem; 
+  border: none; 
+  border-radius: 0.4rem; 
+  cursor: pointer; 
+  transition: all 0.05s linear; 
 }
 
+/* Submit button style */
 .submit-btn {
-  padding: 0.5rem 1.2rem;
-  background-color: #007bff;
+  padding: 0.5rem 1.2rem; 
+  background-color: #007bff; 
 }
 
+/* Remove button style */
 .rmv-btn {
-  background-color: #dc3545;
+  background-color: #dc3545; 
 }
 
+/* Complete button style */
 .cmplt-btn {
-  background-color: #28a745;
+  background-color: #28a745; 
 }
 
+/* Submit button hover effect */
 .submit-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.01);
+  background-color: #0056b3; 
+  transform: scale(1.01); 
 }
 
+/* Remove button hover effect */
 .rmv-btn:hover {
-  background-color: #c82333;
+  background-color: #c82333; 
 }
 
+/* Complete button hover effect */
 .cmplt-btn:hover {
-  background-color: #218838;
+  background-color: #218838; 
 }
