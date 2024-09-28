@@ -3,9 +3,9 @@ import Todo from "./components/Todo.jsx";
 
 export default function App() {
   return (
-    <div className="app">
+    <div className="app"> {/* Main application */}
       <h1 className="app-heading">Todo App</h1>
-      <Todo />
+      <Todo /> {/* Render the Todo component */}
     </div>
   );
 }
