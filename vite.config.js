@@ -4,9 +4,4 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      'uuid': path.resolve(__dirname, 'node_modules/uuid/dist/esm-browser/index.js'),
-    },
-  },
 });
