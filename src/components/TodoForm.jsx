@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function TodoForm({ addNewTodo }) {
+  // State to hold the new todo input
   let [newTodo, setNewTodo] = useState("");
 
   let updateTodoValue = (event) => {
@@ -16,10 +17,10 @@ export default function TodoForm({ addNewTodo }) {
         className="searchbox"
         type="text"
         value={newTodo}
-        onChange={(event) => setNewTodo(event.target.value)}
+        onChange={(event) => setNewTodo(event.target.value)} // Update state on input change
       />
       <button className="submit-btn btn" type="submit">
-        Add Todo
+        Add Todo {/* Button to submit the new todo */}
       </button>
     </form>
   );
