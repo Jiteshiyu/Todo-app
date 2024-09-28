@@ -9,8 +9,8 @@ export default function TodoList({ todos, deleteTodo, completeTodo }) {
           <TodoItem
             key={todo.id}
             todo={todo}
-            deleteTodo={() => deleteTodo(todo.id)}
-            completeTodo={() => completeTodo(todo.id)}
+            deleteTodo={() => deleteTodo(todo.id)} // Function to delete the todo
+            completeTodo={() => completeTodo(todo.id)} // Function to complete the todo
           />
         ))}
       </ul>
