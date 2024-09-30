@@ -1,25 +1,25 @@
 export default function TodoItem({ todo, deleteTodo, completeTodo }) {
   return (
-    <li>
+    <li className="todo">
       <span
-        className="todo"
+        className="todo-name"
         style={
           todo.isDone
             ? { textDecorationLine: "line-through", opacity: "0.5" }
             : {}
         }
       >
-        {todo.task} {/* Displaying the todo task */}
+        {todo.task}
       </span>
       <button className="rmv-btn btn" onClick={() => deleteTodo(todo.id)}>
-        delete {/* Button to delete the todo */}
+        delete
       </button>
       <button
-        style={todo.isDone ? { display: "none" } : {}} // Hide button if task is completed
+        style={todo.isDone ? { display: "none" } : {}}
         className="cmplt-btn btn"
         onClick={() => completeTodo(todo.id)}
       >
-        complete {/* Button to mark the todo as completed */}
+        complete
       </button>
     </li>
   );
