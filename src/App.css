@@ -5,8 +5,6 @@ body {
   background: url("https://plus.unsplash.com/premium_photo-1661284853300-cecb2f4c73d5")
     no-repeat center;
   background-size: cover;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,14 +62,16 @@ body {
 
 /* Todo item style */
 .todo {
-  display: block;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .todo-name {
   color: #333;
   font-size: 1.3rem;
   font-weight: 600;
-  margin-right: 1rem;
   text-transform: uppercase;
 }
 
