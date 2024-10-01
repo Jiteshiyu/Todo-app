@@ -21,8 +21,8 @@ body {
 
 /* App heading style */
 .app-heading {
-  margin-top: 0;
   color: #fff;
+  margin-top: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -40,10 +40,12 @@ body {
 .list-title {
   color: #fff;
   font-size: 1.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .todo-list {
   list-style: none;
+  margin-bottom: 0.5rem;
 }
 
 /* Todo item style */
