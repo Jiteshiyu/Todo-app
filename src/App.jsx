@@ -5,7 +5,8 @@ export default function App() {
   return (
     <div className="app">
       <h1 className="app-heading">Todojo</h1>
-      <Todo /> {/* Render the Todo component */}
+      {/* Render the Todo component */}
+      <Todo />
     </div>
   );
 }
