@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
-  background: url("https://plus.unsplash.com/premium_photo-1661284853300-cecb2f4c73d5")
+  background: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a")
     no-repeat center;
   background-size: cover;
   display: flex;
@@ -90,6 +90,7 @@ body {
 /* Submit button style */
 .submit-btn {
   padding: 0.6rem 1.2rem;
+  border-radius: 0.7rem;
   background-color: #007bff;
 }
 
