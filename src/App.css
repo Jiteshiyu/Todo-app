@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
-  background: url("https://images.unsplash.com/photo-1518896830268-e472923c4fa3")
+  background: url("https://images.unsplash.com/photo-1488866022504-f2584929ca5f")
     no-repeat center;
   background-size: cover;
   display: flex;
@@ -16,7 +16,7 @@ body {
   padding: 1.2rem;
   border: 2px solid #fff;
   border-radius: 1.5rem;
-  box-shadow: 4px 8px 16px rgba(0, 255, 255, 0.7);
+  box-shadow: 4px 6px 12px rgba(0, 255, 255, 0.7);
 }
 
 /* App heading style */
