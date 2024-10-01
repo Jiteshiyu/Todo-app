@@ -2,7 +2,8 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
-  background: #333;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/000/834/435/small_2x/beautiful-space-background.jpg")
+    no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -13,7 +14,6 @@ body {
 .app {
   min-width: 450px;
   padding: 1.2rem;
-  background: linear-gradient(#a3c7e6, #a5c4de);
   border: 2px solid #fff;
   border-radius: 1.5rem;
   box-shadow: 4px 4px 6px rgba(0, 255, 255, 0.7);
