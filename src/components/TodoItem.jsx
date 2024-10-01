@@ -5,7 +5,7 @@ export default function TodoItem({ todo, deleteTodo, completeTodo }) {
         className="todo-name"
         style={
           todo.isDone
-            ? { textDecorationLine: "line-through", opacity: "0.5" }
+            ? { textDecorationLine: "line-through", opacity: "0.8" }
             : {}
         }
       >
