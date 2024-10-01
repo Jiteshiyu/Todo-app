@@ -17,7 +17,7 @@ export default function TodoForm({ addNewTodo }) {
         className="searchbox"
         type="text"
         value={newTodo}
-        placeholder="Add a new todo"
+        placeholder=" Add a new todo"
         onChange={(event) => setNewTodo(event.target.value)} // Update state on input change
       />
       <button className="submit-btn btn" type="submit">
