@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
-  background: url("https://plus.unsplash.com/premium_photo-1667408060681-968be8dbe7a2")
+  background: url("https://images.unsplash.com/photo-1518896830268-e472923c4fa3")
     no-repeat center;
   background-size: cover;
   display: flex;
@@ -21,7 +21,7 @@ body {
 /* App heading style */
 .app-heading {
   margin-top: 0;
-  color: #333;
+  color: #fff;
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .list-title {
-  color: #333;
+  color: #fff;
   font-size: 1.7rem;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .todo-name {
-  color: #333;
+  color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
