@@ -41,14 +41,17 @@ export default function Todo() {
 
   return (
     <div>
-      <TodoForm addNewTodo={addNewTodo} /> {/* Form to add new todos */}
+      {/* Form to add new todos */}
+      <TodoForm addNewTodo={addNewTodo} />
+      {/* Render todos list */}
       <TodoList
         todos={todos}
         deleteTodo={deleteTodo}
         completeTodo={completeTodo}
-      /> {/* Render todos list */}
+      />{" "}
+      {/* Button to complete all todos */}
       <button className="cmplt-btn btn" onClick={completeAllTodo}>
-        Complete All {/* Button to complete all todos */}
+        Complete All
       </button>
     </div>
   );
