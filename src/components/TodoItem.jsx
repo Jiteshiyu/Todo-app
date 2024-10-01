@@ -11,16 +11,17 @@ export default function TodoItem({ todo, deleteTodo, completeTodo }) {
       >
         {todo.task}
       </span>
-      <button className="rmv-btn btn" onClick={() => deleteTodo(todo.id)}>
-        delete
-      </button>
-      <button
-        style={todo.isDone ? { display: "none" } : {}}
-        className="cmplt-btn btn"
-        onClick={() => completeTodo(todo.id)}
-      >
-        complete
-      </button>
+      <div>
+        <button className="rmv-btn btn" onClick={() => deleteTodo(todo.id)}>
+          delete
+        </button>
+        <button
+          style={todo.isDone ? { display: "none" } : {}}
+          className="cmplt-btn btn"
+          onClick={() => completeTodo(todo.id)}
+        >
+          complete
+        </button></div>
     </li>
   );
 }
