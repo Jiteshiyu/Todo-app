@@ -132,16 +132,13 @@ body {
     font-size: 1.3rem;
   }
 
-  .todo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
   .btn {
     text-align: center;
     margin: 0.3rem 0;
+  }
+
+  .rmv-btn {
+    margin-right: 0.75rem;
   }
 }
 
