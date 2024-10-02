@@ -22,7 +22,7 @@ This is a Todo App built with React.js
 
 ## Demo
 
-You can view a live demo of the project [here](https://todojo.netlify.app/).
+You can view a live demo of the project [Todojo](https://todojo.netlify.app/).
 
 ## Features
 
