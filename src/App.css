@@ -6,6 +6,7 @@ body {
   background: url("https://www.shutterstock.com/image-vector/star-universe-background-stardust-deep-600nw-1907210152.jpg")
     no-repeat center;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +20,8 @@ body {
   border: 2px solid #fff;
   border-radius: 1.5rem;
   box-shadow: 4px 4px 6px rgba(0, 255, 255, 0.7);
-  background: rgba(0, 0, 0, 0.6); /* Optional for better readability */
-  box-sizing: border-box; /* Prevents the app width from breaking */
+  background: #333;
+  box-sizing: border-box;
 }
 
 /* App Heading Styles */
@@ -64,7 +65,7 @@ body {
   margin-bottom: 0;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Prevents overflow on smaller screens */
+  flex-wrap: wrap;
 }
 
 .todo-name {
@@ -74,7 +75,6 @@ body {
   text-transform: uppercase;
   flex-grow: 1;
   text-align: left;
-  word-wrap: break-word; /* Ensures long text doesn't break layout */
 }
 
 /* Base Button Styles */
@@ -138,8 +138,9 @@ body {
 
   .todo {
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
   }
 
   .btn {
@@ -173,6 +174,6 @@ body {
 
   .todo {
     padding: 0.5rem;
-    text-align: left;
+    text-align: center;
   }
 }
