@@ -1,6 +1,6 @@
 /* Body Styles */
 body {
-  margin: 0 auto;
+  margin: 0;
   min-height: 100vh;
   text-align: center;
   background: url("https://www.shutterstock.com/image-vector/star-universe-background-stardust-deep-600nw-1907210152.jpg")
@@ -13,11 +13,14 @@ body {
 
 /* Main App Styles */
 .app {
-  min-width: 450px;
+  width: 100%;
+  max-width: 450px;
   padding: 1.2rem;
   border: 2px solid #fff;
   border-radius: 1.5rem;
   box-shadow: 4px 4px 6px rgba(0, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.6); /* Optional for better readability */
+  box-sizing: border-box; /* Prevents the app width from breaking */
 }
 
 /* App Heading Styles */
@@ -31,11 +34,13 @@ body {
 /* Search Box Styles */
 .searchbox {
   height: 2rem;
-  width: 15rem;
+  width: 100%;
+  max-width: 300px;
   font-size: 1rem;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
   border: 2px solid #333;
   outline: none;
+  box-sizing: border-box;
 }
 
 /* List Title Styles */
@@ -48,6 +53,7 @@ body {
 /* Todo List Styles */
 .todo-list {
   list-style: none;
+  padding: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -58,6 +64,7 @@ body {
   margin-bottom: 0;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Prevents overflow on smaller screens */
 }
 
 .todo-name {
@@ -65,13 +72,16 @@ body {
   font-size: 1.57rem;
   font-weight: 600;
   text-transform: uppercase;
+  flex-grow: 1;
+  text-align: left;
+  word-wrap: break-word; /* Ensures long text doesn't break layout */
 }
 
 /* Base Button Styles */
 .btn {
   color: #fff;
   margin: 0.3rem;
-  padding: 0.4rem 1.2rem;
+  padding: 0.4rem 1rem;
   font-size: 1.1rem;
   border: none;
   border-radius: 0.5rem;
@@ -81,8 +91,6 @@ body {
 
 /* Submit Button Style */
 .submit-btn {
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.7rem;
   background-color: #007bff;
 }
 
@@ -96,23 +104,51 @@ body {
   background-color: #28a745;
 }
 
-/* Submit Button Hover Effect */
+/* Button Hover Effects */
 .submit-btn:hover {
   background-color: #0056b3;
   transform: scale(1.01);
 }
 
-/* Remove Button Hover Effect */
 .rmv-btn:hover {
   background-color: #c82333;
 }
 
-/* Complete Button Hover Effect */
 .cmplt-btn:hover {
   background-color: #218838;
 }
 
-/* Media Queries */
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-heading {
+    font-size: 1.8rem;
+  }
+
+  .list-title {
+    font-size: 1.5rem;
+  }
+
+  .todo-name {
+    font-size: 1.3rem;
+  }
+
+  .searchbox {
+    width: 100%;
+  }
+
+  .todo {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin: 0.3rem 0;
+  }
+}
+
 @media (max-width: 480px) {
   .app {
     padding: 1rem;
@@ -134,5 +170,9 @@ body {
   .list-title {
     font-size: 1.2rem;
   }
-}
 
+  .todo {
+    padding: 0.5rem;
+    text-align: left;
+  }
+}
