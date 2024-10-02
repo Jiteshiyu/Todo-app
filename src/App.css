@@ -132,10 +132,6 @@ body {
     font-size: 1.3rem;
   }
 
-  .searchbox {
-    width: 100%;
-  }
-
   .todo {
     flex-direction: column;
     align-items: center;
@@ -144,36 +140,8 @@ body {
   }
 
   .btn {
-    width: 100%;
     text-align: center;
     margin: 0.3rem 0;
   }
 }
 
-@media (max-width: 480px) {
-  .app {
-    padding: 1rem;
-  }
-
-  .todo-name {
-    font-size: 1.1rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 0.3rem 1rem;
-  }
-
-  .app-heading {
-    font-size: 1.5rem;
-  }
-
-  .list-title {
-    font-size: 1.2rem;
-  }
-
-  .todo {
-    padding: 0.5rem;
-    text-align: center;
-  }
-}
