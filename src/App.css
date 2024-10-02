@@ -75,6 +75,7 @@ body {
   text-transform: uppercase;
   flex-grow: 1;
   text-align: left;
+  word-wrap: break-word;
 }
 
 /* Base Button Styles */
