@@ -13,7 +13,7 @@ export default function TodoItem({ todo, deleteTodo, completeTodo }) {
         {todo.task}
       </span>
 
-      <div>
+      <div className="btn-area">
         {/* Button to delete the current todo item */}
         <button className="rmv-btn btn" onClick={() => deleteTodo(todo.id)}>
           delete
