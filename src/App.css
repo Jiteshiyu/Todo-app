@@ -77,6 +77,12 @@ body {
 }
 
 /* Base Button Styles */
+.btn-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   color: #fff;
   margin: 0.3rem;
@@ -140,10 +146,6 @@ body {
   .btn {
     text-align: center;
     margin: 0.3rem 0;
-  }
-
-  .submit-btn{
-    margin-left: 0;
   }
 
   .rmv-btn {
