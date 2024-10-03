@@ -19,9 +19,7 @@ body {
   padding: 1rem;
   border: 2px solid #fff;
   border-radius: 1.5rem;
-  box-shadow: 4px 4px 6px rgba(0, 255, 255, 0.7);
   background: #333;
-  box-sizing: border-box;
 }
 
 /* App Heading Styles */
