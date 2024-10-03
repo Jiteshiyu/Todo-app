@@ -18,8 +18,9 @@ body {
   max-width: 450px;
   padding: 1rem;
   border: 2px solid #fff;
-  border-radius: 1.3rem;
+  border-radius: 1.5rem;
   background: #333;
+  box-sizing: border-box;
 }
 
 /* App Heading Styles */
